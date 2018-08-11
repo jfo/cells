@@ -1,4 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>Hello World</div>, document.getElementById('root'));
+const Cell = props => (
+  <div
+    style={{
+      height: '50px',
+      width: '50px',
+      backgroundColor: 'pink',
+      border: '1px solid black',
+    }}
+  />
+);
+
+ReactDOM.render(<Cell />, document.getElementById('root'));
