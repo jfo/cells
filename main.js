@@ -7,7 +7,7 @@ const Cell = props => (
       display: 'inline-block',
       height: '20px',
       width: '20px',
-      backgroundColor: 'pink',
+      backgroundColor: props.active ? 'pink' : 'blue',
       border: '1px solid black',
     }}
   />
