@@ -13,7 +13,7 @@ const Cell = props => (
   />
 );
 
-const n = 10;
+const n = 60;
 
 const Row = props =>
   Array(n)
