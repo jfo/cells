@@ -12,4 +12,8 @@ const Cell = props => (
   />
 );
 
-ReactDOM.render(<Cell />, document.getElementById('root'));
+const Row = props => <Cell />;
+const Table = props => <Row />;
+
+
+ReactDOM.render(<Table />, document.getElementById('root'));
