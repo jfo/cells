@@ -1,5 +1,11 @@
-import React from 'react';
+import { React, Fragment } from 'react';
 import ReactDOM from 'react-dom';
+
+const makeN = (component, n) => {
+  <Fragment>
+    <component />
+  </Fragment>
+}
 
 const Cell = props => (
   <div
@@ -12,8 +18,8 @@ const Cell = props => (
   />
 );
 
-const Row = props => <Cell />;
-const Table = props => <Row />;
+const Row = props => makeN(<Cell />);
+const Table = props => makeN(<Row />);
 
 
 ReactDOM.render(<Table />, document.getElementById('root'));
