@@ -2,15 +2,18 @@
   "name": "cells",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/parcel index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
   }
 }
