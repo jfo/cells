@@ -22654,7 +22654,7 @@ var store = (0, _redux.createStore)(function () {
       }
   }
   return state;
-} /* , window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() */);
+}, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 _reactDom2.default.render(_react2.default.createElement(
   _reactRedux.Provider,
@@ -22690,7 +22690,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '39445' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '34051' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
