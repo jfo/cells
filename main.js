@@ -16,7 +16,7 @@ const Cell = props => {
         backgroundColor: props.active ? 'hotpink' : 'lightblue',
         border: '1px dotted green',
       }}
-      onClick={() => props.onCellClick(props.x, props.y)}
+      onMouseDown={() => props.onCellClick(props.x, props.y)}
     />
   );
 };
